@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Gêneros Musicais</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #D43F71;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .lista-musical {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        ol {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ol > li {
+            font-size: 22px;
+            font-weight: bold;
+            color: #D43F71;
+            border-left: 5px solid #D43F71;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul > li {
+            font-size: 18px;
+            padding: 5px;
+            color: #555;
+            transition: all 0.3s ease;
+        }
+
+        ul > li a {
+            color: #555;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        ul > li a:hover {
+            color: #D43F71;
+            border-left: 3px solid #D43F71;
+            padding-left: 10px;
+        }
+
+        ol > li:first-child {
+            color: #AF3960;
+            border-left-color: #AF3960;
+        }
+
+        ol > li:last-child {
+            color: palevioletred;
+            border-left-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gêneros Musicais e Artistas</h1>
+    <div class="lista-musical">
+        <ol>
+            <li>Rock
+                <ul>
+                    <li><a href="https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" target="_blank">Arctic Monkeys</a></li>
+                    <li><a href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh" target="_blank">Nirvana</a></li>
+                </ul>
+            </li>
+            <li>Pop
+                <ul>
+                    <li><a href="https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s" target="_blank">Justin Bieber</a></li>
+                    <li><a href="https://open.spotify.com/artist/5cj0lLjcoR7YOSnhnX0Po5" target="_blank">Doja Cat</a></li>
+                </ul>
+            </li>
+            <li>Jazz
+                <ul>
+                    <li><a href="https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf" target="_blank">John Coltrane</a></li>
+                    <li><a href="https://open.spotify.com/artist/4F7Q5NV6h5TSwCainz8S5A" target="_blank">Duke Ellington</a></li>
+                </ul>
+            </li>
+            <li>MPB
+                <ul>
+                    <li><a href="https://open.spotify.com/artist/1PwOU6fFbmaGkK3wkbb8fU" target="_blank">Cazuza</a></li>
+                    <li><a href="https://open.spotify.com/artist/6tw6EpC9RgmSRZiZg0n22t" target="_blank">Legião Urbana</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

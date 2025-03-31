@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade de Shows - SomWeb</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #f06292;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #f06292;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            border-bottom: 2px solid #f06292;
+        }
+
+        .item {
+            background-color: #fff;
+            padding: 15px;
+            border-bottom: 2px solid #eee;
+            font-size: 14px;
+            text-align: left;
+            transition: background 0.3s ease;
+        }
+
+        .item:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .item:hover {
+            background-color: #fce4ec;
+        }
+
+        @media (max-width: 600px) {
+            .grade {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Próximos Shows em Santa Catarina</h1>
+
+    <div class="grade">
+        <div class="header">Data</div>
+        <div class="header">Cidade</div>
+        <div class="header">Local</div>
+        <div class="header">Artista</div>
+
+        <div class="item">1º de março de 2025</div>
+        <div class="item">Florianópolis</div>
+        <div class="item">Avenida Hercílio Luz, 626</div>
+        <div class="item">Bloco Hip Hop de Raiz - Diversos artistas locais de hip hop</div>
+
+        <div class="item">21 de março de 2025</div>
+        <div class="item">Florianópolis</div>
+        <div class="item">Teatro Ademir Rosa (CIC)</div>
+        <div class="item">MV Bill</div>
+
+        <div class="item">21 e 22 de junho de 2025</div>
+        <div class="item">Florianópolis</div>
+        <div class="item">Parque Harmonia</div>
+        <div class="item">Poze do Rodo, Oruam, Cabelinho, Djonga, TZ da Coronel, Tasha e Tracie, MC Tuto, BK, Orochi, Veigh, Chefin, LC e outros</div>
+
+        <div class="item">4 a 6 de julho de 2025</div>
+        <div class="item">Florianópolis</div>
+        <div class="item">A definir</div>
+        <div class="item">Diversos artistas internacionais de hip hop</div>
+    </div>
+
+</body>
+</html>

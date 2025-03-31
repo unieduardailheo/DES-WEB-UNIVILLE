@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escute a Música Mais Famosa do Nirvana</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: rgb(126, 18, 54);
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: rgb(71, 0, 24);
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background-color: #d81b60;
+            color: white;
+            font-size: 20px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: rgb(201, 75, 117);
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom:active {
+            border: 2px solid rgb(201, 75, 117);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Escute Agora a Música Mais Famosa do Nirvana 🤘🎸</h1>
+        <button class="btn-custom" onclick="window.open('https://open.spotify.com/intl-pt/track/4CeeEOM32jQcH3eN9Q2dGj?si=80f76ebe692a4ed0', '_blank');">
+            Ouvir Agora
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

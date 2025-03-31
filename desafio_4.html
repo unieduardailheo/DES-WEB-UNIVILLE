@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Álbuns - Arctic Monkeys</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #D76A8A;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .album p {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .album:hover {
+            transform: translateY(-5px);
+        }
+
+        .album:hover p {
+            color: #D76A8A;
+        }
+
+        @media (max-width: 600px) {
+            .galeria {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Álbuns - Arctic Monkeys</h1>
+
+    <div class="galeria">
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/50Zz8CkIhATKUlQMbHO3k1?si=_bpfJ96LSgacRbf9eaAX8A" target="_blank">
+                <img src="images/download.jpeg" alt="Álbum Whatever People Say I Am, That's What I'm Not (2006)">
+            </a>
+            <p>Whatever People Say I Am, That's What I'm Not (2006)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/1XkGORuUX2QGOEIL4EbJKm?si=x-NVHG6RTdOnE6SS6s8CfQ" target="_blank">
+                <img src="images/favourite_worst_nightmare.jpg" alt="Álbum Favourite Worst Nightmare (2007)">
+            </a>
+            <p>Favourite Worst Nightmare (2007)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/5IEoiwkThhRmSMBANhpxl2?si=vm3bSGvUTGqIXIW3cwSmyg" target="_blank">
+                <img src="images/humbug.jpg" alt="Álbum Humbug (2009)">
+            </a>
+            <p>Humbug (2009)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/2ym2jcqckXqWeTDoxz3Kst?si=vtI3yqc8ROqResiK5ZXrqQ" target="_blank">
+                <img src="images/suck_it_and_see.jpg" alt="Álbum Suck It and See (2011)">
+            </a>
+            <p>Suck It and See (2011)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/78bpIziExqiI9qztvNFlQu?si=cDIE_H0gRNSjm4domiMlXw" target="_blank">
+                <img src="images/am.webp" alt="Álbum AM (2013)">
+            </a>
+            <p>AM (2013)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/7v6FNgLDS8KmaWA1amUtqe?si=fPqIU-5ASN64FxS6AosjTg" target="_blank">
+                <img src="images/tranquility_base_hotel_&_casino.jpg" alt="Álbum Tranquility Base Hotel & Casino (2018)">
+            </a>
+            <p>Tranquility Base Hotel & Casino (2018)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/2GROf0WKoP5Er2M9RXVNNs?si=Ky4LaiCzRXOx8dQ-8Mz_xA" target="_blank">
+                <img src="images/the car.jpg" alt="Álbum The Car (2022)">
+            </a>
+            <p>The Car (2022)</p>
+        </div>
+
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/3tEGBDGnejHf4mx1YSqKnb?si=LwSCTndkTmqb8MsAmIVowA" target="_blank">
+                <img src="images/who_the_fuck_are_arctic_monkeys.jpeg" alt="Álbum Who the Fuck Are Arctic Monkeys? (2006)">
+            </a>
+            <p>Who the Fuck Are Arctic Monkeys? (2006)</p>
+        </div>
+    </div>
+
+</body>
+</html>

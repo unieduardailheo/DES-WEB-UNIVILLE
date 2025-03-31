@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Álbuns</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #D43F71;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            color: #D43F71;
+        }
+
+        thead {
+            background: #D43F71;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background: #fdd2df;
+            transition: 0.3s;
+        }
+
+        .recent {
+            background: #fce6eb;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Álbuns Icônicos</h1>
+    <table>
+        <caption>Álbuns que marcaram época</caption>
+        <thead>
+            <tr>
+                <th>Artista</th>
+                <th>Álbum</th>
+                <th>Ano de Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arctic Monkeys</td>
+                <td>AM</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td>Mac DeMarco</td>
+                <td>Salad Days</td>
+                <td>2014</td>
+            </tr>
+            <tr class="recent">
+                <td>Tame Impala</td>
+                <td>Currents</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>The Neighbourhood</td>
+                <td>I Love You.</td>
+                <td>2013</td>
+            </tr>
+            <tr class="recent">
+                <td>Tyler, the Creator</td>
+                <td>IGOR</td>
+                <td>2019</td>
+            </tr>
+        </tbody>        
+    </table>
+</body>
+</html>

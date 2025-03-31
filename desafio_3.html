@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown Musical</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            color: rgb(126, 18, 54); 
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: palevioletred; 
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .dropdown-menu {
+            background-color: palevioletred !important; 
+        }
+
+        .dropdown-item {
+            color: #fff !important; 
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .dropdown-item:hover {
+            background-color: #d81b60 !important; 
+            border-radius: 8px; 
+        }
+
+        .btn-custom {
+            background-color: palevioletred; 
+            color: white;
+            font-size: 20px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: rgb(201, 75, 117);
+            transform: scale(1.1);
+        }
+
+        .dropdown-toggle::after {
+            content: ''; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Que som você está afim de ouvir hoje?</h1>
+        <div class="dropdown">
+            <button class="btn btn-custom dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                🎶 Escolha seu som
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://open.spotify.com/genre/0JQ5DAqbMKFDXXwE9BDJAr" target="_blank">🎸 Rock</a></li>
+                <li><a class="dropdown-item" href="https://open.spotify.com/genre/0JQ5DAqbMKFEC4WFtoNRpw" target="_blank">🎤 Pop</a></li>
+                <li><a class="dropdown-item" href="https://open.spotify.com/genre/0JQ5DAqbMKFAJ5xb0fwo9m" target="_blank">🎷 Jazz</a></li>
+                <li><a class="dropdown-item" href="https://open.spotify.com/genre/0JQ5DAqbMKFHCaWrPJOoNF" target="_blank">🇧🇷 MPB</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

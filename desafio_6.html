@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva - SomWeb</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            text-align: center;
+            transition: background 0.5s ease, color 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            text-align: justify;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            background-color: violet;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #d6a3fb;
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 599px) {
+            body {
+                background-color: orange;
+                color: black;
+            }
+            .btn {
+                background-color: darkorange;
+                color: white;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+            .btn {
+                background-color: deepskyblue;
+                color: black;
+            }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                background-color: purple;
+                color: white;
+            }
+            .btn {
+                background-color: violet;
+                color: black;
+            }
+            .container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Explore as músicas do Arctic Monkeys 🎵</h1>
+            <p>As músicas do Arctic Monkeys são conhecidas por suas letras inteligentes, melodias marcantes e uma mistura única de indie rock, garage rock e elementos de outros gêneros. Desde o álbum de estreia "Whatever People Say I Am, That's What I'm Not" (2006), com seu som cru e energético, até trabalhos mais experimentais como "Tranquility Base Hotel & Casino" (2018), a banda evoluiu sem perder sua identidade. Suas músicas abordam temas como juventude, relacionamentos, fama e a vida cotidiana, sempre com um toque de ironia e narrativas envolventes.</p>
+            <a href="https://open.spotify.com/intl-pt/artist/7Ln80lUS6He07XvHI8qqHH?si=7oi1Vrs4RbumdvY_WHuFeQ" class="btn" target="_blank">Ouça Agora</a>
+        </div>
+        <img src="images/foto_secundaria.jpg" alt="Imagem de Rock">
+    </div>
+</body>
+</html>
